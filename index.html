@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asd</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+    <div class="container container-md bg-dark p-5 mt-4">
+        <!-- INPUTS CONTAINER -->
+        <div class="d-flex flex-column mb-3">
+            <label for="input-nombre" class="text-white">Ingrese el nombre</label><input class="mb-3 form-control mb-4" placeholder="Nombre" id="input-nombre" type="text">
+            <label for="input-monto" class="text-white">Ingrese el gasto</label><input class="mb-3 form-control mb-4" placeholder="Gasto" id="input-monto" type="number">
+            <button class="btn btn-primary" id="input-submit">Añadir</button>
+        </div>
+        <div class="resultados mb-5">
+            <p class="text-white">RESULTADOS:</p>
+            <div class="row mr-5 ml-5 p-2 bg-white">
+                <div class="col-sm d-flex justify-content-center font-weight-bold">Nombre</div>
+                <div class="col-sm d-flex justify-content-center font-weight-bold">Gasto ($)</div>
+                <div class="col-sm d-flex "></div>
+            </div>
+            <div id="resultados">
+
+            </div>
+        </div>
+        <div class="totales text-white">
+            <p>Total: $<span id="total">0.00</span></p>
+            <p>Cada uno paga: $<span id="division">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
